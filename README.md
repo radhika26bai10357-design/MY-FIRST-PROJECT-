@@ -1,6 +1,6 @@
-Study Planner and Performance Analyser
+# Study Planner and Performance Analyser
 
-## Project Overview
+# Project Overview
 
 Study Planner and Performance Analyser is a Python-based command-line application designed to help students organise their study time and analyse their academic performance.
 
