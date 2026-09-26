@@ -1,77 +1,161 @@
-Study Planner and Performance Analyzer
-Overview
-The Study Planner and Performance Analyzer is a Python-based application designed to help students organize their study tasks and analyze their academic performance through a simple Command Line Interface (CLI).
-It allows users to:
-View their current study tasks.
-Add new study tasks with subject and study duration.
-Remove completed or unwanted tasks.
-Record marks obtained in subjects.
-Calculate average marks and analyze overall performance.
-The system uses Python lists and basic programming concepts to temporarily store study and performance information during the runtime of the program.
-Features
-View Study Tasks
-Displays a numbered list of all planned study tasks along with their subject and duration. If the study plan is empty, it notifies the user.
-Add Study Task
-Allows users to enter a subject, topic, and planned study duration. It includes validation to ensure that empty task details are not added.
-Remove Study Task
-Allows users to remove a study task using its specific number. It checks whether the list is empty and validates the entered task number.
+# Study Planner and Performance Analyser
+
+## Project Overview
+
+Study Planner and Performance Analyser is a Python-based command-line application designed to help students organise their study time and analyse their academic performance.
+
+The application combines study planning, subject management, marks analysis, progress tracking, and report generation in a single menu-driven program. It is designed using basic Python programming concepts covered in the course.
+
+## Problem Statement
+
+Students often find it difficult to manage study hours effectively while keeping track of their academic performance. Maintaining separate records for subjects, study schedules, marks, and progress can also become inconvenient.
+
+This project provides a simple solution by allowing students to enter their academic information, create a study schedule, analyse their marks, and view their overall progress through a single Python application.
+
+## Objectives
+
+The main objectives of the project are:
+
+* To manage student and subject information.
+* To create a simple study schedule based on available study hours.
+* To record and analyse subject marks.
+* To calculate average marks and percentage.
+* To identify the strongest and weakest performing subjects.
+* To provide a final progress report.
+* To demonstrate the practical use of fundamental Python programming concepts.
+
+## Main Features
+
+### Student and Subject Management
+
+The application accepts student details and allows subjects to be added to the academic record.
+
+### Study Planner
+
+The user enters the available study hours, and the program creates a study plan by distributing the available time among the selected subjects.
+
+### Performance Analyser
+
+The application accepts marks for subjects and performs basic academic analysis. It calculates the average marks and percentage and identifies the highest and lowest performing subjects.
+
+### Progress and Final Report
+
+The application displays the collected student information, subjects, study plan, marks, and performance results in a final report.
+
+## Technologies Used
+
+Programming Language: Python
+
+Development Environment: Visual Studio Code
+
+Interface: Command Line Interface
+
+## Python Concepts Used
+
+The project demonstrates the following Python concepts:
+
+* Variables and data types
+* Input and output
+* Conditional statements
+* Loops
+* Functions
+* Lists
+* Dictionaries
+* String operations
+* Arithmetic operations
+* User input validation
+* Menu-driven programming
+
+## Program Workflow
+
+The application follows a simple menu-driven workflow.
+
+Student Details
+↓
+Subject Management
+↓
+Study Planner
+↓
+Marks Entry
+↓
 Performance Analysis
-Allows users to enter marks obtained in different subjects. The system calculates the average marks and provides a simple performance analysis.
-User Interface
-Provides a clean and repetitive menu to guide users through different options until they choose to exit.
-Technologies/Tools Used
-Python 3.x
-Programming language used to develop the application and implement its logic.
-Python Lists
-Used as the primary data structure to store study tasks and performance information dynamically in memory.
-Functions
-Used to divide the program into smaller and reusable sections such as adding tasks, viewing tasks, removing tasks, and analyzing performance.
-Input/Output Operations
-Standard Python `input()` and `print()` functions are used for interaction with the user.
-Conditional Statements and Loops
-Used to control the program flow, validate user input, display menus, and perform calculations.
-Steps to Install & Run the Project
-Install Python
-Ensure that Python 3.x is installed on your computer.
-Download the Project
-Download or clone the project files and save them in a suitable folder.
-Save the Code
-Save the Python source code in a file named:
-`study_planner.py`
-Run the Program
-Open the terminal or command prompt, navigate to the folder containing the Python file, and run:
-```bash
-python study_planner.py
+↓
+Progress Report
+
+The user interacts with the program through the command line and provides the required information at each stage.
+
+## Input
+
+The program accepts:
+
+* Student name
+* Number of subjects
+* Subject names
+* Available study hours
+* Marks obtained in subjects
+
+## Output
+
+The program produces:
+
+* Student and subject information
+* Study schedule
+* Subject-wise marks
+* Average marks
+* Percentage
+* Highest performing subject
+* Lowest performing subject
+* Final progress report
+
+## Project Structure
+
+```text
+MY-FIRST-PROJECT-
+│
+├── project.py
+├── README.md
+├── statement.md
+└── VITyarthi Output
 ```
-Instructions for Testing
-Viewing Study Tasks
-Run the program and choose the option for viewing study tasks.
-Expected Output:
-If tasks exist, they will be displayed with their subject, topic, and duration.
-If no tasks exist, the program will display:
-`No study tasks available.`
-Adding a Study Task
-Choose the option for adding a study task.
-Enter the subject, topic, and planned study duration when prompted.
-Expected Output:
-`Study task added successfully.`
-The task can then be viewed using the View Study Tasks option.
-Removing a Study Task
-Choose the option for removing a study task.
-The system will display the current study tasks.
-Enter the number corresponding to the task that you want to remove.
-Expected Output:
-`Study task removed successfully.`
-If an invalid number is entered, the program will display an appropriate error message.
-Analyzing Performance
-Choose the performance analysis option.
-Enter the marks obtained in the required subjects.
-The program calculates the average marks and displays the performance result.
-Expected Output:
-`Average Marks: [calculated average]`
-The program then displays a suitable performance message based on the calculated average.
-Exiting the Program
-Choose the Exit option.
-Expected Output:
-`Thank you for using Study Planner and Performance Analyzer.`
-The program will then terminate.
+
+## How to Run
+
+1. Install Python on the computer.
+2. Download or clone this repository.
+3. Open the project folder in Visual Studio Code or any Python-supported IDE.
+4. Open `project.py`.
+5. Run the Python file.
+6. Follow the instructions displayed in the terminal.
+
+## Sample Use
+
+A student can enter their subjects and available study hours. The program creates a study schedule and then accepts marks for each subject. After the marks are entered, the application calculates the student's average and percentage and displays the overall performance.
+
+## Limitations
+
+The current version is a command-line application and stores information only while the program is running. It does not use a database or permanent file storage.
+
+## Future Scope
+
+The project can be further improved by adding:
+
+* Permanent data storage
+* File handling
+* Graphical user interface
+* Individual task-based study planning
+* Daily and weekly progress tracking
+* Attendance tracking
+* Performance graphs
+* Automated study recommendations
+
+## Conclusion
+
+Study Planner and Performance Analyser provides a simple Python-based solution for organising study time and understanding academic performance. The project demonstrates how fundamental Python concepts can be combined to create a practical, menu-driven application for students.
+
+## Author
+
+Radhika Maheshwari
+
+VIT Bhopal University
+
+Course: Python Programming
